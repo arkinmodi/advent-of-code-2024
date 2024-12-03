@@ -17,4 +17,5 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: 1.23.0
+          cache-dependency-path: "**/*.sum"
       - run: go test ./day*
