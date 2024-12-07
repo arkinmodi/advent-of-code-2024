@@ -3,7 +3,8 @@
 version: 2
 updates:
   - package-ecosystem: gomod
-    directory: /
+    directories:
+      - "/day*"
     schedule:
       interval: daily
     groups:
