@@ -1,4 +1,4 @@
-AOC_DAYS := $(shell find . -maxdepth 1 -type d -name 'day*')
+AOC_DAYS := $(shell find . -maxdepth 1 -type d -name 'day*' | sort)
 LATEST_AOC_DAY := $(lastword $(AOC_DAYS))
 
 .PHONY: all
