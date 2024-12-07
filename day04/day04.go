@@ -10,15 +10,6 @@ import (
 //go:embed *.txt
 var content embed.FS
 
-func printGrid(grid [][]rune) {
-	var sb strings.Builder
-	for _, r := range grid {
-		sb.WriteString(string(r))
-		sb.WriteString("\n")
-	}
-	fmt.Println(sb.String())
-}
-
 func part1(input string) int {
 	var wordSearch [][]rune
 	for _, row := range strings.Split(input[:len(input)-1], "\n") {
